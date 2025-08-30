@@ -1,0 +1,106 @@
+html:has(#mode:checked) .dark {
+  display: none;
+}
+
+html:has(#mode:checked) .light {
+  display: block;
+}
+
+.light {
+  display: none;
+}
+
+label i {
+  cursor: pointer;
+}
+/* navbar background grouping*/
+body:has(.mode:checked) #navbar,
+body:has(.mode:checked) #header .btns .Watch i,
+body:has(.mode:checked) #contact .details,
+body:has(.mode:checked) #chefs .chef-items .item {
+  background-color: #171717;
+}
+body:has(.mode:checked) #contact,
+body:has(.mode:checked) #chefs {
+  background-color: #202020;
+}
+/* header background grouping*/
+body:has(.mode:checked) #header,
+body:has(.mode:checked) #gallery,
+body:has(.mode:checked) #contact .contact-form form {
+  background-color: #252525;
+}
+/* white color grouping */
+body:has(.mode:checked) #navbar h2,
+body:has(.mode:checked) h3,
+body:has(.mode:checked) #chefs .chef-header p,
+body:has(.mode:checked) #gallery .gallery-title p,
+body:has(.mode:checked) #contact .contact-title p,
+body:has(.mode:checked) #navbar h1,
+body:has(.mode:checked) #navbar i,
+body:has(.mode:checked) #navbar a,
+body:has(.mode:checked) #header h2,
+body:has(.mode:checked) #contact .info p,
+body:has(.mode:checked) #contact .info p span,
+body:has(.mode:checked) #contact .info a,
+body:has(.mode:checked) #navbar .navbar-list a:not(#close-icon):hover,
+body:has(.mode:checked) #header .btns .Watch,
+body:has(.mode:checked)
+  #header
+  .btns
+  .Watch
+  i
+  body:not(:has(:target)):has(.mode:checked)
+  #navbar
+  .navbar-list
+  a[href="#header"],
+body:has(#header:target):has(.mode:checked)
+  #navbar
+  .navbar-list
+  a[href="#header"],
+body:has(#chefs:target):has(.mode:checked)
+  #navbar
+  .navbar-list
+  a[href="#chefs"],
+body:has(#gallery:target):has(.mode:checked)
+  #navbar
+  .navbar-list
+  a[href="#gallery"],
+body:has(#contact:target):has(.mode:checked)
+  #navbar
+  .navbar-list
+  a[href="#contact"] {
+  color: #fff;
+}
+/* Btns color */
+body:has(.mode:checked) #header .btns .Watch:hover,
+body:has(.mode:checked) span,
+body:has(.mode:checked) #footer .touch ul li a i {
+  color: #c17e1f;
+}
+/* btn Background-color Grouping */
+body:has(.mode:checked) #navbar .navbar-list a:not(#close-icon)::before,
+body:has(.mode:checked) #header .btns .Book,
+body:has(.mode:checked) #contact .map-icon,
+body:has(.mode:checked) #contact .form-btn,
+body:has(.mode:checked) #footer .subscribe .subscribe-btn {
+  background-color: #c17e1f;
+}
+body:has(.mode:checked) #header .btns .Watch i::after {
+  border-top: 7px solid #c17e1f;
+  border-left: 7px solid #c17e1f;
+}
+body:has(.mode:checked) #contact .form-btn,
+body:has(.mode:checked) #footer .subscribe .subscribe-btn {
+  color: #000;
+}
+body:has(.mode:checked) #chefs .chef-items .light-shape {
+  display: none;
+}
+body:has(.mode:checked) #chefs .chef-items .dark-shape {
+  display: block;
+}
+body:has(.mode:checked) #chefs .chef-items .shadow-none,
+body:has(.mode:checked) #navbar {
+  box-shadow: none;
+}
